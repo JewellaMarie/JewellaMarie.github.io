@@ -1,11 +1,11 @@
 body {
     background-image: url("photobg.jpg");
-    font-family: "century gothic";
+    font-family: "century gothic", Helvetica, arial, sans-serif;
     color: #76544A;
   }
   div {
     background-color: #FFF8F8;
-    font-family: "century gothic";
+    font-family: "century gothic", Helvetica, arial, sans-serif;
     color: #76544A;
   }
   h1 {
@@ -17,7 +17,7 @@ body {
   h2 {
     color: #FFF8F8;
     background-color: #76544A;
-    font-family: "century gothic";
+    font-family: "century gothic", Helvetica, arial, sans-serif;
     text-transform:uppercase; 
     letter-spacing:20px;
   }
