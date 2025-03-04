@@ -22,7 +22,7 @@ body {
   .grid-container{
     display: grid;
     display: grid;
-  grid-template-columns: 2fr 5fr; 
+  grid-template-columns: 1fr 1fr; 
     gap:0px; 
     border-color: #FFF8F8; 
     border-radius: 15px;
@@ -63,7 +63,7 @@ body {
 
   }
   .header {
-    height: 19vh;
+    height: 15vh;
     width: 100%;
     padding: 0%;
     background-color:#76544a;
@@ -99,4 +99,3 @@ body {
     color: #dfc7c1;
     padding: : 5px 5px;
   }
-      
