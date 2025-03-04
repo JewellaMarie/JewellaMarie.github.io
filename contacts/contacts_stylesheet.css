@@ -1,0 +1,128 @@
+body {
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: color-burn;
+    background-size: cover;
+    font-family: "century gothic";
+    color: #76544A;
+  }
+  h1 {
+    background-image: linear-gradient("top bottom right", #7DAEA7, #ffffff);
+    font-family: "Georgia";
+    border-radius: 30px;
+    border-style: dashed;
+    color: #FFF8F8;
+    text-shadow: 4px 4px #3B6367;
+    font-size: 2em;
+    padding: 15px;
+    text-align: center;
+    background-color: #7DAEA7;
+    margin: 0.5in;
+  }
+  h2 {
+    color: #FFF8F8;
+    border-style: solid;
+    border-radius: 20px;
+    margin: 0.5in;
+    padding:
+    background-color: #76544A;
+    font-family: "century gothic"; 
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    
+  }
+button {
+    color: white; 
+    background-color:#76544A; 
+    border-color: #FFF8F8 ;
+    border-radius:20px; 
+    border-width: 4px;
+    padding: 20px; 
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-right: 10px;
+    text-align: center;
+
+}
+button.edge {
+    color: white; 
+    background-color:#76544A; 
+    border-color: #FFF8F8 ;
+    border-radius:20px; 
+    border-width: 4px;
+    text-align: center;
+    padding: 20px; 
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size:  1em;
+    margin-left: 0.5in;
+
+}
+  
+div{
+    margin: 0.5in;
+  font-family: "verdana";
+  border-style: solid;
+  line-height: 2;
+  border-color: #FFF8F8;
+  letter-spacing: 2px; 
+  border-radius: 10px;
+  color: #76544A;
+  padding: 20px;
+  text-align: justify;
+  background-color: #F1DBD6;
+  font-size: 1em;
+  }
+
+  p{
+    margin: 0.5in;
+  font-family: "verdana";
+  border-style: solid;
+  border-color: #FFF8F8;
+  letter-spacing: 2px; 
+  border-radius: 15px;
+  color: #76544A;
+  padding: 20px;
+  text-align: center;
+  background-color: #F1DBD6;
+  font-size: 1em;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap:0px; 
+    border-color: #FFF8F8; 
+    border-radius: 15px;
+    padding: 5px;
+    text-align: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      }
+  
+  
+  .grid-item {
+    background-color: #FFF8F8;
+    text-align: center;
+    object-fit: cover;
+  }
+  
+  h3{
+    margin: 0.5in;
+    font-family: "verdana";
+    border-style: solid;
+    border-color: #F1DBD6;
+    letter-spacing: 1px; 
+    border-radius: 15px;
+    color: #FFF8F8;
+    padding: 20px;
+    text-align: justify;
+    background-color: #76544A;
+    font-size: 1em;
+  }
+
+ a{margin: 0.1in; color: white; }

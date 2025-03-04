@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset = "utf-8">
+        <meta name="author" content="JEWELLA MARIE A. MARANION">
+        <link rel="icon" href="../favicon.png" type=" image/x-icon">
+        <title>JEWELLA'S INTERESTS</title>
+        <style type="text/css">
+        </style>
+    </head>
+
+    <link rel="stylesheet" href="skills_stylesheet.css">
+  <body>
+    <div id="grad1"></div>
+    <h1> ME-MIX: WHAT MAKES JEWELLA, A JEWEL-LA </h1>
+    <h2> WHAT AM I FOND OF DOING?</h2>
+    <p><sup>1</sup> My hobby journey has been a process of self-discovery.
+        <sup>2</sup> For a long time, I didn't think I had many hobbies.
+        <sup>3</sup> My father always emphasized my roles as a daughter and student, which shaped my perception of myself.
+        <sup>4</sup> However, I eventually realized I was more than that.
+        <sup>5</sup> I'm a friend, a sister, a partner, and even a teacher to some.
+        <sup>6</sup> This realization sparked a desire to explore new hobbies.
+        <sup>7</sup> Firstly, streaming became a regular activity for me.
+        <sup>8</sup> It allowed me to socialize and earn money simultaneously.
+        <sup>9</sup> It transformed into a profitable and enjoyable hobby.
+        <sup>10</sup> I've also become known as a bit of a "Local news source," though I'm still getting to know the newest students.
+        <sup>11</sup> My schedule has been so hectic lately!
+        <sup>12</sup> Moreover, community projects are something I enjoy when I have time.
+        <sup>13</sup> Another is that teaching is a true passion, and I consider it a hobby I cherish.
+        <sup>14</sup> Blogging is another secret hobby of mine.
+        <sup>15</sup> I keep a file of local news and updates (gossips), all neatly organized with bullet points.
+        <sup>16</sup> It's become a regular habit.
+        <sup>17</sup> I know I have been saying this a lot of times now, but one thing I consider a hobby too is my <strong>S-I-N-G-I-N-G!</strong>
+        <sup>18</sup> that is for sure something no one could ever take away from me, my love for music.
+        <sup>19</sup> I even used it as a study method in high school converting study materials to songs so I could remember.
+        <sup>20</sup> It's an interest, a skill, and a beloved hobby all rolled into one.
+        <sup>21</sup> I also have a natural curiosity and love exploring new things.
+        <sup>22</sup> I'm always eager to learn, even beyond what I'm formally taught.
+        <sup>23</sup> For example, I've been exploring border characteristics and experimenting with photos on my website.
+        <sup>24</sup> It's a little preview of what's to come!
+        <sup>25</sup> Watching movies and short skits is my way to unwind after long study sessions such as tiktoks.
+        <sup>26</sup> They're my escape and my haven.
+        <sup>27</sup> My hobbies might seem quiet and not overly adventurous.
+        <sup>28</sup> However, I have a good reason for that.
+        <sup>29</sup> My grades and scholarship are my top priorities to even think about adding more.
+        <sup>30</sup> I believe that adding too many extra activities right now would only lead to more stress, and I need to maintain balance.
+        <sup>31</sup> All in all, I am content with what I do and I am hoping that in the future after all the pressures have been lifted off my chest, I'd get the chance to do more.</p>
+
+  </body>
+</html>
