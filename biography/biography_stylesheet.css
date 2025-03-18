@@ -1,55 +1,236 @@
 body {
-    background-image: url("background.jpg");
+    margin: 0;
+    padding:0%;
+    background-image: url(bg.jpg);
+    font-family: sans-serif;
+    background-color: #ffffff;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-blend-mode: lighten;
     background-size: cover;
-    font-family: "century gothic";
-    color: #76544A;
+    background-attachment: fixed;
+    transition: background-color 0.3s ease;  
   }
-  h1 {
-    background-image: linear-gradient("top bottom right", #7DAEA7, #ffffff);
-    font-family: "Georgia";
-    border-radius: 30px;
-    border-style: dashed;
-    color: #FFF8F8;
-    text-shadow: 4px 4px #3B6367;
-    font-size: 2em;
+
+
+
+
+  .header {
+    background-color: #FEC8D8;
+    color: #ff84b1;
+    display:flexbox;
     padding: 15px;
-    text-align: center;
-    background-color: #7DAEA7;
-    margin: 0.5in;
-    text-transform: uppercase;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Add transitions */
   }
-  h2 {
-    color: #FFF8F8;
-    border-style: solid;
-    border-radius: 20px;
-    margin: 0.5in;
-    background-color: #76544A;
-    font-family: "century gothic"; 
-    text-transform: uppercase;
-    letter-spacing: 20px;
-    
-  }
-button {
-    color: white; 
-    background-color:#76544A; 
-    border-color: #FFF8F8 ;
-    border-radius:20px; 
-    border-width: 4px;
-    padding: 20px; 
-    cursor: pointer;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    margin-right: 10px;
-    text-align: center;
+
+
+h1{
+  background-color: #ff84b173;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-top: 0%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #FFF8F8;
+  text-shadow: 2px 2px rgb(177, 60, 124);
+  font-size: 2.5em;
 
 }
-button.edge {
+
+.nospace {
+  margin: 0%;
+  padding: 20px;
+  padding-bottom: 0%;
+  background-color: #ff84b173;
+}
+.nospace2 {
+  margin: 0%;
+  padding: 20px;
+  background-color: pink;
+}
+
+  p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #fdf4f8;
+    text-align: left;
+    font-size: 3em;
+    text-shadow: 4px 4px 3px#b13c7c;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #81002f68;
+    font-weight: bold;
+    transition: color 0.3s ease; 
+  }
+
+  .nav-links a:hover {
+    color: #ffffff;
+    text-shadow: 2px 2px 2px rgba(255, 0, 106, 0.996);;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    margin: 0%;
+  }
+
+  .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-bottom: 0%;
+    opacity: 80%;
+  }
+
+  .grid-item:hover {
+    scale: scale(2) !important;
+    opacity: 100%;
+  }
+  
+  button{
+
+  }
+
+  .me {
+    width: 500px;
+    height: auto;
+    padding: 0%;
+    margin: 0;
+    border-radius: 20px;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease; 
+  }
+
+  .me:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  .grid {
+    background-color: rgba(249, 169, 182, 0.879);
+    border-radius: 0;
+    border: 1px solid white;
+    padding: 0px;
+    margin: 0.5em;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid:hover {
+    background-color: rgba(255, 192, 203, 0.903);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+
+  .grid p {
+    margin: 5px 0;
+  }
+
+  .paragraph {
+    line-height: 2;
+    font-size: 1.2em;
+    color: #6f003d;
+    text-shadow: none;
+    text-align: justify;
+    max-width: 80%;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .gridLNG::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 300px;
+    z-index: -1;
+    transition: opacity 0.3s ease; 
+  }
+  .top{
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  title{
+    margin: 0%;
+  }
+
+  h2{
+    margin: 0%;
+  }
+  .prp{
+    background-color: #FFF8F8;
+    border-radius: 30px;
+    border: solid;
+    text-decoration: none;
+    color: #b13c7c;
+    padding: 30px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    border-color: rgb(177, 60, 124);
+  }
+
+
+  .story{
+    background-color: rgba(255, 227, 231, 0.84);
+    border-radius: 50px;
+    letter-spacing: 3px;
+    border-bottom-right-radius: 0%;
+    border-bottom-left-radius: 0%;
+    margin-top: 0.5;
+    padding-top: 50px;
+    color: #6f003d;
+    line-height: 0.3in;
+    font-family: 'century gothic',Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .grid-container:hover::before {
+    opacity: 0.8; 
+  }
+
+  .grid-container::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    right: 15%;
+    width: 50px;
+    height: 50px;
+    background-color: #b13c7c;
+    border-radius: 50%;
+    z-index: -1;
+    transition: transform 0.3s ease; 
+  }
+
+  .grid-container:hover::after {
+    transform: scale(1.2); 
+  }
+
+  body::before {
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    width: 70px;
+    height: 70px;
+    background-color: #FEC8D8;
+    border-radius: 50%;
+    z-index: -1;
+    transition: transform 0.3s ease; 
+  }
+
+  button.edge {
     color: white; 
-    background-color:#76544A; 
+    background-color:#FEC8D8; 
     border-color: #FFF8F8 ;
     border-radius:20px; 
     border-width: 4px;
@@ -63,7 +244,7 @@ button.edge {
 
 }
   
-div{
+h2{
     margin: 0.5in;
   font-family: "verdana";
   border-style: solid;
@@ -71,7 +252,7 @@ div{
   border-color: #FFF8F8;
   letter-spacing: 2px; 
   border-radius: 10px;
-  color: #76544A;
+  color: #b13c7c;
   padding: 20px;
   text-align: justify;
   background-color: #F1DBD6;
@@ -85,13 +266,16 @@ div{
   border-color: #FFF8F8;
   letter-spacing: 2px; 
   border-radius: 15px;
-  color: #76544A;
+  color: #6f003d;
   padding: 20px;
   text-align: center;
   background-color: #F1DBD6;
   font-size: 1em;
   }
 
+  div{
+    text-decoration: none;
+  }
   .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
@@ -120,9 +304,9 @@ div{
     color: #FFF8F8;
     padding: 20px;
     text-align: justify;
-    background-color: #76544A;
+    background-color: #b13c7c;
     font-size: 1em;
   }
 
  a{margin: 0.1in; color: white; }
-  
+
