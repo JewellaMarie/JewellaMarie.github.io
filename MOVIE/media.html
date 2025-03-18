@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Entertainment</title>
+    <link rel="stylesheet" href="skills_stylesheet.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url(../bg.jpg);
+        }
+        .in{
+            background-color: white;
+            opacity: 0.8;
+            border-radius: 30px;
+            margin: 1.3in;
+            padding: 90px;
+
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: rgb(177, 60, 124);
+        }
+
+        .button-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            text-decoration: none;
+            color: rgb(177, 60, 124);
+            background-color: #FEC8D8;
+            border-radius: 5px;
+            justify-content: center;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+            align-items: center;
+            align-content: center;
+        }
+
+        .button:hover {
+            background-color: #ff84b1;
+        }
+    </style>
+</head>
+<body>
+    <div class="nospace">
+        <a href="../index.html"><img src="../house_icon.svg" alt="home icon" title="go to home page" width="30px"></a>
+    </div>
+    <div class="in">
+    <h1>What are you looking for?</h1>
+    <div class="button-container">
+        <a href="../MUSIC/music.html" class="button">Music</a>
+        <a href="movie.html" class="button">Movie</a>
+    </div>
+</div>
+
+</body>
+</html>
