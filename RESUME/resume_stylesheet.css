@@ -21,11 +21,11 @@ body {
     padding-bottom: 0%;
     padding: 20px;
     text-align: center;
-    background-color:#ff84b1ca;
+    background-color:#f57a9bd0;
     font-size: 1.4em;
     }
   .mains{
-    background-color: #ff1f71da;
+    background-color:#f57a9bd0;
     border-radius: 100px;  
     border-bottom-left-radius: 0%;
     border-bottom-right-radius: 0%;
@@ -40,7 +40,6 @@ body {
   padding-bottom: 0%;
   padding: 20px;
   text-align: center;
-  background-color:#ff84b1d4;
   font-size: 1.4em;
   }
 
