@@ -18,8 +18,28 @@ button.edge {
     font-weight: bold;
     margin-right: 10px;
     margin-left: 0.5in;
-
 }
+
+.button-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            text-decoration: none;
+            color: rgb(177, 60, 124);
+            background-color: #FEC8D8;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #ff84b1;
+        }
 
 .container {
     display: flex;
