@@ -1,95 +1,367 @@
 <!DOCTYPE html>
+
 <html lang='en'>
-    <head>
-        <meta charset = "utf-8">
-        <meta name="author" content="JEWELLA MARIE A. MARANION">
-        <link rel="icon" href="../favicon.ico" type=" image/x-icon">
-        <title>RESUME</title>
-        <style type="text/css">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="JEWELLA MARIE A. MARANION">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <title>JEWELLA MARIE A. MARANION - RESUME</title>
+    <link rel="stylesheet" href="../stylesheet.css">
+    <style>
+  /* General Styles */
+body {
+    font-family: 'Century Gothic', Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    color: #4a4a4a; /* Dark Neutral Text */
+    line-height: 1.6;
+    letter-spacing: 1px;
+}
+
+ul, ol {
+    line-height: normal; /* Keep default line height for lists */
+    letter-spacing: normal; /* Keep default letter spacing for lists */
+    text-align: left;
+}
+
+
+
+p, h2, h3, h4, h5, h6, blockquote {
+    font-family: 'Century Gothic', Verdana, sans-serif; /* Apply Century Gothic to content */
+    line-height: 1.5;
+    letter-spacing: 1px; /* Apply 2px letter spacing */
+}
+
+
+/* Main Content */
+main {
+    padding: 0px 20px 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    background-color: #a8c3a0; /* White Background for Main Content */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle Shadow */
+    width: 90%; /* Ensure the main content adjusts to the viewport width */
+}
+.story {
+    background-color: #fcedd0;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Subtle Shadow for Depth */
+    margin: 20px auto;
+    line-height: 1.5;
+    letter-spacing: 2px; /* Apply 2px letter spacing for stories */
+    padding: 20px;
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+}
+
+.story::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    width: 50px;
+    height: 10px;
+    background-color: #8b5e3c; /* Warm Brown Accent */
+    border-radius: 5px 5px 0 0;
+}
+
+/* Titles */
+h1.title, .story h1 {
+    font-family: 'Georgia', 'Times New Roman', serif; /* Use Georgia as the primary serif font */
+    font-size: 1.8em;
+    color: #5d4037; /* Dark Brown */
+    background-color: #d7ccc8; /* Light Brown Background */
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    line-height: normal; /* Keep default line height for titles */
+    letter-spacing: 2px; /* Apply 2px letter spacing for titles */
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    font-family: 'Century Gothic', Verdana, Geneva, Tahoma, sans-serif;
+    color: #4a4a4a; /* Neutral Text Color */
+}
+
+main .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+main .grid-item {
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+}
+main .grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+main .grid-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+main .left-column {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .right-column {
+    text-align: left;
+}
+main .grid-item p {
+    font-family: 'Century Gothic', Verdana, sans-serif; /* Ensure grid item paragraphs use Century Gothic */
+    line-height: 1.5; /* Ensure grid item paragraphs also follow the 1.5 rule */
+    letter-spacing: 2px; /* Apply 2px letter spacing for grid item paragraphs */
+}
+video {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border: 3px solid #E8A0A0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+video:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+button {
+    font-family: 'Century Gothic', Verdana, sans-serif; /* Buttons use Century Gothic */
+    background-color: #8b5e3c; /* Warm Brown */
+    color: #ffffff; /* White Text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border: 2px solid #d7ccc8; /* Light Brown Border */
+    letter-spacing: 2px; /* Apply 2px letter spacing for buttons */
+}
+button:hover {
+    background-color: #a1887f; /* Medium Brown for Hover State */
+    transform: scale(1.05);
+    color: #ffffff;
+}
+.go-top {
+    position:  fixed;
+    bottom: 30px;
+    right: 30px;
+    margin: 20px 0;
+    background-color: #2e4d34; 
+    color: #ffffff; 
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 0.9em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    float: right; 
+}
+.go-top:hover {
+    background-color: #83a38a; 
+    transform: scale(1.1);
+}
+.story .go-top {
+    font-family: 'Century Gothic', Verdana, sans-serif; /* Go Top button uses Century Gothic */
+    display: block;
+    letter-spacing: 2px; /* Apply 2px letter spacing for Go Top button */
+}
+.story p {
+    font-family: 'Century Gothic', Verdana, sans-serif; /* Ensure story paragraphs use Century Gothic */
+    line-height: 1.5; /* Ensure story paragraphs follow the 1.5 rule */
+    letter-spacing: 2px; /* Apply 2px letter spacing for story paragraphs */
+}
+.story ul, .story ol {
+    line-height: normal; /* Keep default line height for lists inside stories */
+    letter-spacing: normal; /* Keep default letter spacing for lists */
+}
+
+
+    main {
+        padding: 0 20px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+      
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-top: 0;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .about-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #fcf5e8;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 3px solid #E8A0A0;
+        }
+
+        .about-text {
+            flex-grow: 1;
+        }
+
+        .about-text p {
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #fcf5e8;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            text-align: left;
+            margin: 15px;
+            margin-bottom: 15px;
+            color:rgb(2, 39, 2);
+        }
+
+        ul, ol {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            header, footer {
+                flex-direction: column;
+                text-align: center;
+            }
+
             .about-section {
-                display: flex;
-                align-items: center;
+                flex-direction: column;
+                text-align: center;
             }
 
-            .profile-picture-about {
-                width: 100px;
-                height: 100px;
-                border-radius: 50%;
-                object-fit: cover;
-                margin-right: 20px;
-                border: 2px solid #ccc;
+            .profile-picture {
+                margin: 0 auto 20px;
             }
-
-            .about-text {
-                flex-grow: 1;
-            }
-        </style>
-    </head>
-
-    <link rel="stylesheet" href="resume_stylesheet.css">
-
-    <body id="top">
-        <div class="nospace">
-            <a href="../index.html"><img src="../house_icon.svg" alt="home icon" title="go to home page" width="30px"></a>
-        </div>
-        <h1 align="center" style="border-bottom-right-radius: 30px; border-bottom-left-radius: 30px;"> <br>RESUME <br><br></h1>
-        <h2 class="mains">About me</h2>
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo" style="color:rgb(2, 39, 2);">JU<sup>2<br></sup></div>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../BIOGRAPHY/biography.html">My Life</a>
+            <a href="../SKILLS/skills.html">Skills</a>
+            <a href="../PHOTODUMP/photogal.html">Gallery</a>
+            <a href="../MEDIA/media.html">Media</a>
+            <a href="resume.html" class="active">Resume</a>
+            <a href="../TRAVEL/imagemapping.html">Travel</a>
+            <a href="../bucketlist.html">Bucket List</a>
+            <a href="../CONTACTS/contacts.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h1 style="color:#3b6146; font-size: 2em; background-color:#f9ebcd; padding: 20px; border-radius: 20px; margin: 0in; border-top-right-radius:0px;border-top-left-radius:0px;">JEWELLA MARIE A. MARANION</h1>
         <div class="about-section">
-          <p class="content about-text"> 
-            <br><br>
-            <img src="profile_picture.png" alt="Profile Picture" class="profile-picture" style="border-radius: 100%;" width="200px" height="auto">
-            
-            <br><br>I am Jewella Marie Maranion, 20 year old student of Universty of the East under the College of Computer Stydies and Systems, an information technology student, author, singer/writer, College of Computer Systems and Studies Student Council Executive Committee. I am a persevere, time management-wise, career-centered, and strategic peer and I am certain I possess valuable skills and qualities that would benefit any facility.</p>
+            <img src="../MYPHOTO.png" alt="Profile Picture" class="profile-picture">
+            <div class="about-text">
+                <h2 style="color:rgb(2, 39, 2)" >About Me</h2>
+                <p>A highly motivated and detail-oriented Information Technology student at the University of the East, currently pursuing a Bachelor of Science in Information Technology. Possessing a strong foundation in programming languages such as Python, Java, and C#, as well as web development technologies including HTML and CSS. I am a proactive and strategic individual with proven time management and leadership skills, demonstrated through my involvement as a College of Computer Studies and Systems Student Council Executive Committee member. My diverse interests range from technical problem-solving and creative output generation to artistic expression as a singer/songwriter. I am eager to leverage my technical skills, leadership experience, and passion for technology to contribute meaningfully to a dynamic organization.</p>
+            </div>
         </div>
 
+        <div class="section">
+            <h2>Technical IT Skills</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> Python, Java, C# &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li><strong>Markup and Stylesheet Languages:</strong> HTML, CSS</li>
+            </ul>
+        </div>
 
-        <h2> Technical IT Skills</h2>
-        <ul class='a'>
-            <br><br>
-            <li>Knowledgeable in the following programming languages:</li>
-            <ul class = 'b'>
-                <li> Python </li>
-                <li> Java</li>
-                <li> C#</li>
+        <div class="section">
+            <h2>Work Experience&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+            <ul>
+                <li><strong>Live Streaming:</strong> Various Platforms</li>
+                <li><strong>Private Tutor:</strong> Tech-related courses, Mathematics, and Sciences</li>
+                <li><strong>College of Computer Studies and Systems Student Council Officer:</strong> University of the East - 1st Year Representative</li>
+                <li><strong>Freelance Basic Output Creator:</strong>
+                    <ul>
+                        <li>Developed PowerPoint Presentations</li>
+                        <li>Contributed to Concept Creation and Architecture</li>
+                        <li>Authored Scripts</li>
+                        <li>Prepared Handouts and Notes</li>
+                        <li>Designed various creative basic outputs</li>
+                    </ul>
+                </li>
             </ul>
-            <li> Knowledegeable in the following mark-up and stylesheet languages: </li>
-            <ul class = 'b'>
-                <li> HTML </li>
-                <li> CSS</li>
-            </ul>
-            <br>
-        </ul>
+        </div>
 
-        <h2> Work Experiences </h2>
-        <ul class='a'>
-        <br>
-            <li>Live Streaming</li>
-            <li>Tutoring on tech-related courses, math, and sciences</li>
-            <LI>College of Computer Studies and Systems Student Council Officer - 1st Year Representative</LI>
-            <li>Create basic outputs for customers </li>
-            <ul class = 'b'>
-                <li> Sample Outputs: </li>
-                <ol class='a'>
-                    <li> PowerPoint Presentations </li>
-                    <li> Concept creation/architecture </li>
-                    <li> Scripts </li>
-                    <li> Handouts/Notes</li>
-                    <li> Any creative basic outputs</li>
-                   </ol>
-                   <br>
-            </ul>
-        </ul>
-        <h2> Educational Attainment </h2>
-        <ol class='b'>
-            <br>
-            <li> Infant Jesus Academy | <small> ELEMENTARY 2011 - 2017 and SENIOR HIGH SCHOOL  2021 -2023 </small> </li>
-            <li>APEC Schools | <small> JUNIOR HIGH SCHOOL 2017 - 2021</small></li>
-            <li>University of the East | <small> COLLEGE 2021 - Present </small></li>
-            <br>
-        </ol>
-        <h2> Skills, Training, Seminar Attended </h2>
-        <ol class='b'type='I'>
-            <br><br>
+        <div class="section">
+            <h2>Educational Attainment</h2>
+            <ol>
+                <li><strong>University of the East:</strong> Bachelor of Science in Information Technology (2021 - Present)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li><strong>Infant Jesus Academy:</strong> Senior High School (2021 - 2023)</li>
+                <li><strong>APEC Schools:</strong> Junior High School (2017 - 2021)</li>
+                <li><strong>Infant Jesus Academy:</strong> Elementary (2011 - 2017)</li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h2>Skills, Training, and Seminars Attended to:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+            <ul>
             <li> Seminar and Trainings Attended to</li>
             <ul class='a'>
             <li>Smart Choices, Clear Minds: A Substance Abuse Prevention Education Seminar</li>
@@ -109,21 +381,22 @@
              <li> Management Skills</li>
              <br>
             </ul>
-        </ol>
-        <h2> Hobbies/Interest Related to the Job Position I have applied to</h2>
-        <ul class='a'>
-            <br><br>
-            <li> Editing (Photos, Videos, Powerpoints, Documents, and etc.)</li>
-            <li> Programming </li>
-            <li> Leading, defending, and fixing hardware basic problems</li>
-            <li> Conceptualizing and Analyzing </li>
-            <br><br>
-        </ul>
-
-        <button class="edge" onclick="window.location.href='#top';"><img src="../arrow-up-solid.svg" alt="home logo" width="20px"> <br>go top</button>
-        <br><br>
-        <div class="nospace2">
-            <a href="../index.html"><img src="../house_icon.svg" alt="home icon" title="go to home page" width="30px"></a>
         </div>
-    </body>
+
+        <div class="section">
+            <h2>Hobbies and Interests</h2>
+            <ul>
+                <li>Proficient in editing (photos, videos, presentations, documents)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>Engaged in programming projects</li>
+                <li>Experienced in hardware troubleshooting</li>
+                <li>Skilled in conceptualization and analytical thinking</li>
+            </ul>
+        </div>
+
+        <a href="#top" class="go-top" style=" text-align:center" ><img src="../caret-up-solid.svg" width="20px; padding 5px;" style='float:center' alt='go top icon'><br>go top</a>
+    </main>
+    <footer>
+        <p>All rights reserved 2025. Made by: Jewella Marie Maranion</p>
+    </footer>
+</body>
 </html>

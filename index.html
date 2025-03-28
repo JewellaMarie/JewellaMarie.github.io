@@ -1,49 +1,256 @@
 <!DOCTYPE html>
-<html lang='en'>
-    <head>
-        <meta charset = "utf-8">
-        <meta name="author" content="JEWELLA MARIE A. MARANION">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="favicon.ico" type=" image/x-icon">
-        <link rel="manifest" href="/site.webmanifest">
-        <title>HOME</title>
-        <style type="text/css">
-        </style>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Century Gothic', Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fcedd0; /* Muted Light Green Background */
+            color: #3e3e3e; /* Neutral Dark Gray Text */
+            line-height: 1.6;
+            letter-spacing: 1px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure the body spans the full height of the viewport */
+        }
 
-    <link rel="stylesheet" href="index_stylesheet.css">
+        /* Header */
+        header {
+            background-color: #3b6146; /* Muted Forest Green */
+            color: #ffffff; /* White */
+            display: flex;
+            flex-wrap: wrap; /* Allow wrapping for smaller screens */
+            padding: 15px 20px 0;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
 
-    <body id="top">
-        
-        <!--MARANION, JEWELLA MARIE A.-->
-        <!--CIP1101-ITAD-->
+        header .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            margin: 0;
+        }
 
-        <div class="header">
-          <nav>
-            <img src="hello.png" class='logo' alt="my website logo">
-            <ul class="nav-links">
-              <li><a href="BIOGRAPHY/biography.html"><strong>ABOUT</strong></a></li>
-              <li><a href="SKILLS/skills.html"><strong>SKILLS</strong></a></li>
-              <li><a href="GALLERY/photogal.html"><strong>GALLERY</strong></a></li>
-              <li><a href="MOVIE/media.html"><strong>MEDIA</strong></a></li>
-              <li><a href="RESUME/resume.html"><strong>RESUME</strong></a></li>
-              <li><a href="CONTACTS/contacts.html"><strong>CONTACT ME</strong></a></li>
-            </ul>
-          </nav>
-        </div>
+        header nav {
+            display: flex;
+            flex-wrap: wrap; /* Allow navigation links to wrap on smaller screens */
+            gap: 10px;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        header nav a {
+            color: #f8f8f8; /* Light Neutral Text */
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+            padding: 10px 15px 15px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 5px 5px 0 0;
+            background-color: transparent;
+        }
+
+        header nav a.active {
+            background-color: #fcedd0; /* Muted Light Green for Active Tab */
+            color: #2e4d34; /* Dark Muted Green Text for Active Tab */
+            padding-bottom: 0%;
+            margin-bottom: 0;
+        }
+
+        header nav a:hover {
+            background-color: #6b8f71; /* Muted Medium Green for Hover State */
+            color: #ffffff; /* White Text for Hover State */
+        }
+
+        /* Main Content */
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            background-color: #fcf5e8; /* White Background for Main Content */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle Shadow */
+            width: 90%; /* Ensure the main content adjusts to the viewport width */
+        }
+
+        /* Grid Container */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+            gap: 20px;
+            width: 100%;
+        }
+
+        /* Grid Items */
+        .grid-item {
+            text-align: center;
+        }
+
+        .grid-item video {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            aspect-ratio: 16 / 9; /* Maintain a 16:9 aspect ratio */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .grid-item video:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .grid-item h1 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 3em;
+            margin: 10px 0;
+        }
+
+        .grid-item p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #495057;
+            margin: 10px 0;
+        }
+
+        .grid-item button {
+            background-color: #2e4d34;
+            color: #FFFFFF;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .grid-item button:hover {
+            background-color: #8eb696;
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            margin-top: auto;
+            text-align: center;
+            font-size: 0.9em;
+            color: #ffffff;
+            background-color: #2e4d34; /* Dark Muted Green */
+            padding: 15px 0;
+            border-top: 3px solid #6b8f71; /* Muted Medium Green Accent */
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            header nav {
+                justify-content: center;
+            }
+
+            main {
+                padding: 15px;
+            }
+
+            .grid-container {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust grid for smaller screens */
+            }
+
+            .grid-item h1 {
+                font-size: 2.5em; /* Adjust font size for smaller screens */
+            }
+
+            .grid-item p {
+                font-size: 1em; /* Adjust paragraph font size */
+            }
+        }
+
+        @media (max-width: 480px) {
+            header .logo {
+                font-size: 1.5em; /* Adjust logo size for smaller screens */
+            }
+
+            .grid-container {
+                grid-template-columns: 1fr; /* Switch to a single column layout */
+            }
+
+            .grid-item h1 {
+                font-size: 2em; /* Further reduce font size for very small screens */
+            }
+
+            .grid-item p {
+                font-size: 0.9em; /* Adjust paragraph font size */
+            }
+
+            .grid-item button {
+                font-size: 0.9em; 
+                padding: 8px 15px; 
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo" style="color:rgb(2, 39, 2);">JU<sup>2<br></sup></div>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="BIOGRAPHY/biography.html">My Life</a>
+            <a href="SKILLS/skills.html">Skills</a>
+            <a href="PHOTODUMP/photogal.html">Gallery</a>
+            <a href="MEDIA/media.html">Media</a>
+            <a href="RESUME/resume.html">Resume</a>
+            <a href="TRAVEL/imagemapping.html">Travel</a>
+            <a href="bucketlist.html">Bucket List</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <br><br>
+    <main>
+
         <div class="grid-container">
-          <div class="grid-item">
-            <video class='me' width="900px" height="880px" autoplay loop controls="autoplay">
-                <source src="movie.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-              </video>
-              </a>
-          </div>
-          <div class="grid" style="padding: 20px; margin: 0.5">
-              <p class="paragraph">Hello! I am</p><p style="letter-spacing: 10px;">JEWELLA MARIE</p>
-              <p class="paragraph"> 20 years of age, a second year Information Technology student, on the video on the left, that's me, all and unfiltered! stating all the information on the website. Anyways, welcome to my landing page. In this website, you will get to know me. The header above will redirect you to links you chose to be redirected to. I hope you enjoy the fun ride in my website! </div>
-          </div>
+            <!-- Video on the left -->
+            <div class="grid-item">
+                <br><br>
+                <video controls>
+                    <source src="movie.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <!-- Text on the right -->
+            <div class="grid-item">
+                <p>Hello! I am</p>
+                <h1 style="color:#2e4d34">JEWELLA MARIE</h1>
+                <p style="text-align:justify">
+                    20 years of age, a second-year Information Technology student. On the video, that's me, all me! Welcoming you on my landing page. Anyways, In this website, you will get to know me. The header above will redirect you to links you chose to be redirected to. I hope you enjoy the fun ride on my website!
+                </p>
+                <button onclick="window.location.href='BIOGRAPHY/biography.html';">Learn More</button>
+            </div>
         </div>
-    </body>
-    
-    </html>
+    </main>
+    <footer>
+        <p>All rights reserved 2025. Made by: Jewella Marie Maranion</p>
+    </footer>
+</body>
+</html>

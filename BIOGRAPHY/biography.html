@@ -1,77 +1,138 @@
 <!DOCTYPE html>
 <html lang='en'>
-    <head>
-        <meta charset = "utf-8">
-        <meta name="author" content="JEWELLA MARIE A. MARANION">
-        <link rel="icon" href="../favicon.ico" type=" image/x-icon">
-        <title>BIOGRAPHY HOME</title>
-        <style type="text/css">
-        </style>
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="JEWELLA MARIE A. MARANION">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../stylesheet.css">
+    <title>BIOGRAPHY HOME</title>
+    <style>
+        body {
+            font-family: 'Century Gothic', Verdana, sans-serif; 
+            margin: 0;
+            padding: 0;
+            color: #333333; 
+            line-height: 1.5; 
+        }
 
-    <link rel="stylesheet" href="biography_stylesheet.css">
+        .go-top {
+            position:  fixed;
+            bottom: 30px;
+            right: 30px;
+            margin: 20px 0;
+            background-color: #2e4d34; 
+            color: #ffffff; 
+            border: none;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 0.9em;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            float: right; 
+        }
+        .go-top:hover {
+            background-color: #83a38a; 
+            transform: scale(1.1);
+        }
+        .highlight-section {
+            background-color: #fcf5e8; 
+            color: #333333; 
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .highlight-blockquote {
+            font-style: italic;
+            color: #333333; /* Dark Gray */
+            border-left: 5px solid #082902f5; 
+            padding-left: 10px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            justify-items: center;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: #ffffff; /* White */
+        }
+        .grid-item img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
 
-    <body id="top">
-        <!--MARANION, JEWELLA MARIE A.-->
-        <!--CIP1101-ITAD-->
-        <div class="nospace">
-            <a href="../index.html"><img src="../house_icon.svg" alt="home icon" title="go to home page" width="30px"></a>
-        </div>
-        <h1 align="center" style="border-bottom-right-radius: 30px; border-bottom-left-radius: 30px;"> <br>The ‘Hirap’ Chronicles: A Jewella-fied Memoir, Unfiltered <br><br></h1>
-        
-
-        <div style="font-weight: bold; color:#672248;#ffc0cba7; padding: 20px"> <blockquote>A facade of academic success and online fame lies a story of resilience forged in childhood trauma and teenage heartbreak. 
-        <br>        
-            <blockquote>
-                Jewella’s journey is a raw and honest portrayal of navigating life’s challenges, from family turmoil to the pressures of college life. Discover how she transforms pain into strength, finding joy amidst the shadows of her past.
-                <br><br>
-                A story of love, loss, and the unwavering pursuit of self-discovery, this is a testament to the human spirit’s capacity to overcome adversity and find light in the darkest of times. 
+    <header>
+        <div class="logo" style="color:rgb(2, 39, 2);">JU<sup>2<br></sup></div>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="biography.html" class="active">My Life</a>
+            <a href="../SKILLS/skills.html">Skills</a>
+            <a href="../PHOTODUMP/photogal.html">Gallery</a>
+            <a href="../MEDIA/media.html" >Media</a>
+            <a href="../RESUME/resume.html">Resume</a>
+            <a href="../TRAVEL/imagemapping.html">Travel</a>
+            <a href="../bucketlist.html">Bucket List</a>
+            <a href="../CONTACTS/contacts.html">Contact</a>
+        </nav>
+    </header>
+    <main class="content container">
+        <h1 style="color:#3b6146; font-size: 2em; background-color:#f9ebcd; padding: 20px; border-radius: 20px; margin: 0in; border-top-right-radius:0px;border-top-left-radius:0px;text-transform:uppercase;">The ‘Hirap’ Chronicles: A Jewella-fied Memoir, Unfiltered</h1>
+        <div class="highlight-section">
+            <blockquote class="highlight-blockquote">
+                A facade of academic success and online fame lies a story of resilience forged in childhood trauma and teenage heartbreak.
+                <br>
+                <blockquote>
+                    Jewella’s journey is a raw and honest portrayal of navigating life’s challenges, from family turmoil to the pressures of college life. Discover how she transforms pain into strength, finding joy amidst the shadows of her past.
+                    <br><br>
+                    A story of love, loss, and the unwavering pursuit of self-discovery, this is a testament to the human spirit’s capacity to overcome adversity and find light in the darkest of times.
+                </blockquote>
             </blockquote>
-        </blockquote>
         </div>
-<br><br>
-        <div style="border-top-right-radius:40px;border-top-left-radius:40px;color:white;font-weight: bold; background-color: rgba(254, 142, 161, 0.737); padding: 20px">
-            <blockquote> On the photos provided below, you can choose as to which part of my life you would like to discover:</blockquote>
-        </div>
-
-        <div class="grid-container" style="margin: 0%; border-bottom-right-radius:40px; border-bottom-left-radius:40px;">
-            <div class="grid-item" style="margin: 0%;">
-                <a href="#childhood" "><img src="childhood.jpg" style='border-style: solid;
-                    border-color: #FFF8F8; border-radius: 10px; width: 80%; height: auto; object-fit: cover;' alt="my photo">
-                </a>
+    <br>
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="#childhood"><img src="childhood.jpg" alt="my photo"></a>
             </div>
             <div class="grid-item">
-                <a href="#teenage" "><img src="teenage.jpg" style='border-style: solid;
-                border-color: #FFF8F8; border-radius: 10px; width: 80%; height: auto; object-fit: cover;' alt="my photo">
-                </a>
+                <a href="#teenage"><img src="teenage.jpg" alt="my photo"></a>
             </div>
             <div class="grid-item">
-                <a href="#college"><img src="college.jpg" style='border-style: solid;
-                border-color: #FFF8F8; border-radius: 10px; width: 80%; height: auto; object-fit: cover;' alt="my photo">
-                </a>
+                <a href="#college"><img src="college.jpg" alt="my photo"></a>
             </div>
-          </div>
-        <br><br>
-
-        <div align='center' id="childhood"> <h1 style="font-size:2.3em; text-transform:uppercase; font-family:'century-gothic','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; letter-spacing:4px; background-color:rgba(254, 142, 161, 0.737)"><br>My not so 'CHILL'dhood Life <br><br></h1> </div>
- 
-  <br>
-            <div class="story" align ="justify"> <blockquote> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                
-                
-                <div class="grid-container">
-                    <div class="grid-item">
-                        <a href="1.jpg" target="display"><img src="1.jpg" style='border-style: solid;
-                            border-color: #FFF8F8; border-radius: 10px; width: 50%; height: auto; object-fit: cover;' alt="baby me" title="baby me ">
-                        </a>
-                    </div>
-                    <div class="grid-item">
-                        <a href="2.jpg" target="display"><img src="2.jpg" style='border-style: solid;
-                            border-color: #FFF8F8; border-radius: 10px; width: 50%; height: auto; object-fit: cover;' alt="graduation pic" title="graduate na ako, ma">
-                        </a>
-                    </div>
-                    
+        </div>
+        <div class="story">
+        <div id="childhood">
+            <h1>My not so 'CHILL'dhood Life</h1>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <a href="1.jpg" target="display"><img src="1.jpg" alt="baby me" title="baby me"></a>
                 </div>
+                <div class="grid-item">
+                    <a href="2.jpg" target="display"><img src="2.jpg" alt="graduation pic" title="graduate na ako, ma"></a>
+                </div>
+                <div class="grid-item">
+                    <a href="baby.jpg" target="display"><img src="baby.jpg" alt="childhood memory" title="childhood memory"></a>
+                </div>
+                <div class="grid-item">
+                    <a href="12.jpg" target="display"><img src="12.jpg" alt="bonjing era" title="me still naive and happy"></a>
+                </div>
+            </div>
+            
+            <blockquote><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+                
                 <sup>1</sup>"Childhood is a wonderful time of life, but it can also be a difficult time of life.
             You have to learn to deal with all sorts of things." <sup>2</sup>This quote from Fred Rogers
             resonated deeply with Jewella, whose childhood was far from idyllic. <sup>3</sup>As the eldest
@@ -130,39 +191,28 @@
             her time. <sup>30</sup>She might've been an unlucky wife, but she is a successful mother to them.
             <sup>31</sup><strong>BEST MOM EVER!</strong> 
             <br><br><br>
-            <button class="edge" onclick="window.location.href='#top';"><img src="../arrow-up-solid.svg" alt="home logo" width="20px"> <br>go top</button>
-                  <BR>
-                    <BR>
-                        <br>
-               </blockquote></div>
-               
-        </blockquote>
-        
+               </blockquote>
+            <br><br><br><BR><BR>
         </div>
-        <div class=divider><br></div>
-         
-        <div align='center' id="teenage"> <h1 style="font-size:2.3em; text-transform:uppercase; font-family:'century-gothic','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; letter-spacing:4px; background-color:rgba(254, 142, 161, 0.737)"><br>AGE: PRIME-teen YEARS OLD <br><br></h1> </div>
-
-            <div class="story" align ="justify"> <blockquote> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-                
-                <div class="grid-container">
-                    <div class="grid-item">
-                        <a href="3.jpg" target="display"><img src="3.jpg" style='border-style: solid;
-                            border-color: #FFF8F8; border-radius: 10px; width: 100%; height: auto; object-fit: cover;' alt="contest" title="me during my teenage years">
-                        </a>
-                    </div>
-                    <div class="grid-item">
-                        <a href="4.jpg" target="display"><img src="4.jpg" style='border-style: solid;
-                            border-color: #FFF8F8; border-radius: 10px; width: 100%; height: auto; object-fit: cover;' alt="me" title="baguio candid">
-                        </a>
-                    </div>
-                    <div class="grid-item">
-                        <a href="5.jpg" target="display"><img src="5.jpg" style='border-style: solid;
-                            border-color: #FFF8F8; border-radius: 10px; width: 100%; height: auto; object-fit: cover;' alt="pandemic era" title="me during pandemic and depressed">
-                        </a>         
-                    </div>
+        </div>
+        <div class="story">
+        <div id="teenage">
+            <h1>AGE: PRIME-teen YEARS OLD</h1>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <a href="3.jpg" target="display"><img src="3.jpg" alt="contest" title="me during my teenage years"></a>
                 </div>
-
+                <div class="grid-item">
+                    <a href="4.jpg" target="display"><img src="11.jpg" alt="me" title="baguio candid"></a>
+                </div>
+                <div class="grid-item">
+                    <a href="5.jpg" target="display"><img src="5.jpg" alt="pandemic era" title="me during pandemic and depressed"></a>
+                </div><div class="grid-item">
+                    <a href="teen.jpg" target="display"><img src="teen.jpg" alt="debut era" title="me during my 18th"></a>
+                </div>
+            </div>
+            <blockquote> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                
                 <sup>1</sup>"Happy thirteenth, Jewella!" The air buzzed with joy as everyone celebrated
                 Jewella's transition into her teenage years—her era, as some would say. <sup>2</sup>This
                 marked the beginning of a period of immense growth and learning, though not
@@ -234,44 +284,30 @@
                 coaster ride, but for the first time, she really enjoyed. <sup>43</sup><b>SHE'S FINALLY GETTING
                   THERE, A LITTLE MORE PUSH AND GROWTH!</b>
                   <br><br><br>
-                  <button class="edge" onclick="window.location.href='#top';"><img src="../arrow-up-solid.svg" alt="home logo" width="20px"> <br>go top</button>
-                  <BR>
-                    <BR>
-                        <br>
-               </blockquote></div>
-               
-        </blockquote>
-        
+               </blockquote>
+
         </div>
-
-        <div class="top" style="text-align: center;">
-        
         </div>
+        <div class="story">
 
-        <div class=divider><br></div>
-        <br><br>
-
-        <div align='center' id="college"> <h1 style="font-size:2.3em; text-transform:uppercase; font-family:'century-gothic','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; letter-spacing:4px; background-color:rgba(254, 142, 161, 0.737)"><br>UNIVERSIT-AINT FUN... YET<br><br></h1> </div>
-            <div class="story" align ="justify"> <blockquote> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                
-                <div class="grid-container">
-                    <div class="grid-item">
-                        <a href="6.jpg" target="display"><img src="6.jpg" style='border-style: solid;
-                            border-color: #FFF8F8; border-radius: 10px; width: 100%; height: auto; object-fit: cover;' alt="me today" title="me in this era">
-                        </a>
-                    </div>
-                    <div class="grid-item">
-                        <a href="8.jpg" target="display"><img src="8.jpg" style='border-style: solid;
-                            border-color: #FFF8F8; border-radius: 10px; width: 100%; height: auto; object-fit: cover;' alt="pretty girl" title="ganda ko rito">
-                        </a>
-                    </div>
-                    <div class="grid-item">
-                        <a href="7.jpg" target="display"><img src="7.jpg" style='border-style: solid;
-                            border-color: #FFF8F8; border-radius: 10px; width: 100%; height: auto; object-fit: cover;' alt="contacts" title="me first time trying contacts">
-                        </a>         
-                    </div>
+        <div id="college">
+            <h1>UNIVERSIT-AINT FUN... YET</h1>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <a href="6.jpg" target="display"><img src="6.jpg" alt="me today" title="me in this era"></a>
                 </div>
-
+                <div class="grid-item">
+                    <a href="8.jpg" target="display"><img src="8.jpg" alt="pretty girl" title="ganda ko rito"></a>
+                </div>
+                <div class="grid-item">
+                    <a href="7.jpg" target="display"><img src="7.jpg" alt="contacts" title="me first time trying contacts"></a>
+                </div>
+                <div class="grid-item">
+                    <a href="11.jpg" target="display"><img src="10.jpg" alt="clean girl look era" title="me trying clean hair look"></a>
+                </div>
+            </div>
+            <blockquote> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
                 <sup>1</sup><em>"HIRAP!"</em> This became one of Jewella's signature phrases in college. <sup>2</sup>Life,
                 however, was smoother this time around. <sup>3</sup>She was enjoying herself, actively
                 participating in various events, serving as a first-year representative, and
@@ -329,20 +365,16 @@
                   <BR>
                     
                 
-                    <button class="edge" onclick="window.location.href='#top';"><img src="../arrow-up-solid.svg" alt="home logo" width="20px"> <br>go top</button>
+                    <button class="go-top" onclick="window.location.href='#top';"><img src="../caret-up-solid.svg" alt="home logo" width="20px"> <br>go top</button>
                   <BR>
                     <BR>
                         <br>
-               </blockquote></div>
-               
-        </blockquote>
-        
+               </blockquote>
         </div>
-        
-        <br>
-        <br>
-        <div class="nospace2">
-            <a href="../index.html"><img src="../house_icon.svg" alt="home icon" title="go to home page" width="30px"></a>
         </div>
-    </body>
-    </html>
+    </main>
+    <footer>
+        <p> All rights reserved 2025. Made by: Jewella Marie Maranion</p>
+    </footer>
+</body>
+</html>

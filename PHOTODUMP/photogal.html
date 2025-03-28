@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="JEWELLA MARIE A. MARANION">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <title>MY PHOTO DUMP</title>
+    <link rel="stylesheet" href="../stylesheet.css">
+    <style>
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+
+        .grid-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            display: block;
+            opacity: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .grid-item:hover {
+            transform: scale(1.05); 
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .grid-item:hover img {
+            transform: scale(1.1);
+            opacity: 100%;
+        }
+
+
+        .grid-item figcaption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7); 
+            color: #ffffff; 
+            text-align: center;
+            padding: 10px;
+            font-size: 0.9em;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .grid-item:hover figcaption {
+            opacity: 1; 
+        }
+
+  
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+            }
+        }
+
+        @media (max-width: 480px) {
+            .grid-container {
+                grid-template-columns: 1fr; 
+            }
+
+            header .logo {
+                font-size: 1.5em; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo" style="color: #1b2c20;">JU<sup>2</sup></div>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../BIOGRAPHY/biography.html">My Life</a>
+            <a href="../SKILLS/skills.html">Skills</a>
+            <a href="photogal.html" class="active">Gallery</a>
+            <a href="../MEDIA/media.html">Media</a>
+            <a href="../RESUME/resume.html">Resume</a>
+            <a href="../TRAVEL/imagemapping.html">Travel</a>
+            <a href="../bucketlist.html">Bucket List</a>
+            <a href="../CONTACTS/contacts.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h1 style="color:#3b6146; font-size: 2em; background-color:#f9ebcd; padding: 20px; border-radius: 20px; margin: 0; border-top-right-radius:0px;border-top-left-radius:0px;">MY PHOTO DUMP</h1>
+        <h3 style="font-weight: lighter; padding: 0; margin:0; text-align: center;">Hover to see captions and clearer version, and click on the photo to view in full size</h3>
+        <div class="grid-container">
+            <figure class="grid-item">
+                <a href="hinhin_ko_here.jpg" target="display" title="dalagang pilipina">
+                    <img src="hinhin_ko_here.jpg" alt="dalagang pilipina">
+                </a>
+                <figcaption>dalagang pilipina</figcaption>
+            </figure>
+            <figure class="grid-item">
+                <a href="batang_galit.jpg" target="display" title="me na galit">
+                    <img src="batang_galit.jpg" alt="me na galit">
+                </a>
+                <figcaption>me na galit</figcaption>
+            </figure>
+            <figure class="grid-item">
+                <a href="baguio_girl.jpg" target="display" title="baguio girl">
+                    <img src="baguio_girl.jpg" alt="baguio girl">
+                </a>
+                <figcaption>baguio girl</figcaption>
+            </figure>
+            <figure class="grid-item">
+                <a href="pabebe_era.jpg" target="display" title="pebebe girl">
+                    <img src="pabebe_era.jpg" alt="pebebe girl">
+                </a>
+                <figcaption>pebebe girl</figcaption>
+            </figure>
+            <figure class="grid-item">
+                <a href="9.jpg" target="display" title="SISTER">
+                    <img src="9.jpg" alt="SISTER">
+                </a>
+                <figcaption>SISTER</figcaption>
+            </figure>
+            <figure class="grid-item">
+                <a href="grabe_ba.jpg" target="display" title="beach pic">
+                    <img src="grabe_ba.jpg" alt="boracay pic">
+                </a>
+                <figcaption>beach pic</figcaption>
+            </figure>
+            <figure class="grid-item">
+                <a href="career_week.jpg" target="display" title="shs picture w/ friends">
+                    <img src="career_week.jpg" alt="shs picture with friends">
+                </a>
+                <figcaption>shs picture with friends</figcaption>
+            </figure>
+            <figure class="grid-item">
+                <a href="graduation.jpg" target="display" title="graduation pic w/ the best">
+                    <img src="graduation.jpg" alt="graduation pic">
+                </a>
+                <figcaption>graduation pic with the best</figcaption>
+            </figure>
+            <figure class="grid-item">
+                <a href="me_sis_and_tita.jpg" target="display" title="pebebe girls">
+                    <img src="me_sis_and_tita.jpg" alt="pebebe girls">
+                </a>
+                <figcaption>pebebe girls</figcaption>
+            </figure>
+            <figure class="grid-item">
+                <a href="cousins.jpg" target="display" title="cousins">
+                    <img src="cousins.jpg" alt="cousins">
+                </a>
+                <figcaption>cousins</figcaption>
+            </figure>
+            <figure class="grid-item">
+                <a href="uecal_ppl.jpg" target="display" title="ue cal peeps">
+                    <img src="uecal_ppl.jpg" alt="ue cal friends">
+                </a>
+                <figcaption>ue cal peeps</figcaption>
+            </figure>
+            <figure class="grid-item">
+                <a href="this_school_year.jpg" target="display" title="mandatory group-fie">
+                    <img src="this_school_year.jpg" alt="college photo">
+                </a>
+                <figcaption>mandatory group-fie</figcaption>
+            </figure>
+            <figure class="grid-item">
+                <a href="council_things.jpg" target="display" title="council stuff">
+                    <img src="council_things.jpg" alt="council stuff">
+                </a>
+                <figcaption>council stuff</figcaption>
+            </figure>
+            <figure class="grid-item">
+                <a href="ue_friends.jpg" target="display" title="ue friends">
+                    <img src="ue_friends.jpg" alt="ue friends">
+                </a>
+                <figcaption>ue friends</figcaption>
+            </figure>
+            <figure class="grid-item">
+                <a href="wow_lover_girl_era.jpg" target="display" title="lovergirl yan sha">
+                    <img src="wow_lover_girl_era.jpg" alt="ue cal">
+                </a>
+                <figcaption>ue cal x ue mnl</figcaption>
+            </figure>
+            <figure class="grid-item">
+                <a href="wow_singer.jpg" target="display" title="me singing">
+                    <img src="wow_singer.jpg" alt="me singing">
+                </a>
+                <figcaption>me singing</figcaption>
+            </figure>
+            <figure class="grid-item">
+                <a href="1.jpg" target="display" title="me photo">
+                    <img src="1.jpg" alt="me photo in red">
+                </a>
+                <figcaption>me photo in red</figcaption>
+            </figure>
+            <figure class="grid-item">
+                <a href="2.jpg" target="display" title="solo graduation pic">
+                    <img src="2.jpg" alt="graduation pic">
+                </a>
+                <figcaption> solo graduation pic</figcaption>
+            </figure>
+            <figure class="grid-item">
+                <a href="3.jpg" target="display" title="me holding a guitar">
+                    <img src="3.jpg" alt="me holding a guitar">
+                </a>
+                <figcaption>me holding a guitar</figcaption>
+            </figure>
+            <figure class="grid-item">
+                <a href="4.jpg" target="display" title="pretty me">
+                    <img src="4.jpg" alt="me">
+                </a>
+                <figcaption>pretty me</figcaption>
+            </figure>
+            <figure class="grid-item">
+                <a href="11.jpg" target="display" title="me at 18">
+                    <img src="11.jpg" alt="me at 18">
+                </a>
+                <figcaption>me at 18</figcaption>
+            </figure>
+            <button class="go-top" onclick="window.location.href='#top';">
+                <img src="../caret-up-solid.svg" alt="home logo" width="20px"> <br>go top
+            </button>
+        </div>
+    </main>
+    <footer>
+        <p>All rights reserved 2025. Made by: Jewella Marie Maranion</p>
+    </footer>
+</body>
+</html>
