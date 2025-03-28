@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table cellpadding="5" border="2" cellspacing="10" style="margin-top: 20px;" style="background-color: pink;">
+        <tr class="pink">
+            <th>list</th>
+            <th colspan="2">CellNames/cellgroup</th>
+        </tr>
+        <tr>
+            <td>cell1</td>
+            <td>Cell2</td>
+            <td rowspan="2">Cell3/cell6</td>
+        </tr>
+        <tr>
+            <td>cell4</td>
+            <td>Cell5</td>
+        </tr>
+    </table>
+
+    <br> 
+
+    <table cellpadding="5" border="2" cellspacing="10" style="margin-top: 20px;" style="background-color: pink;">
+        <!-- First Row-->
+        <tr class="pink"> 
+            <th>&nbsp;</th>
+            <th colspan="2" id="special">Basic/Full</th>
+        </tr>
+        <!-- Second Row-->
+
+        <tr class="pink">
+            <th>Set Up</th>
+            <td rowspan="2" id="special">Free</td>
+            <td>49.99</td> 
+        </tr> 
+        <!-- Third Row-->
+
+        <tr class="blue">  
+            <th>First Year</th>
+            <td>19.99</td>
+        </tr> 
+        <!-- Fourt Row-->
+        <tr> 
+            <th>Second Year</th>
+            <td>9.99</td>
+            <td>29.99</td> 
+        </tr>
+    </table>
+
+</body>
+</html>
