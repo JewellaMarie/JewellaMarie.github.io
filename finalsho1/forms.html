@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset = "utf-8">
+        <meta name="author" content="JEWELLA MARIE A. MARANION">
+        <title>FORMS</title>
+        <style type="text/css">
+            body{
+                font-family: Tahoma;
+                color: rgb(3, 87, 51);
+                font-size: 1.125em;
+            }
+            table{
+                border: 5px solid #306c54;
+                border-collapse: collapse;
+                margin: 10px auto;
+            }
+            th, td{
+                border-bottom: 1px solid #b4e5cf;
+                border-collapse: collapse;
+                padding: 15px;
+            }
+            select {
+                padding: 10px;
+                margin: 8px 0;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            thead tr{
+                background-color: #b4e5c8;
+            }
+            input[type="text"], textarea{
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box; 
+            }
+            input[type="submit"]{
+                width: 100%;
+                background-color: #b4e5d1;
+                color: rgb(0, 128, 100);
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-family: verdana;
+                font-size: 1.125em;
+            }
+
+            input[type="submit"]:hover{
+                background-color: #379678c2;
+                color: white;
+            }
+
+            textarea{
+                resize: none;
+            }
+        </style>
+    </head>
+    <body>
+        <!--MARANION, JEWELLA MARIE A.-->
+        <!--CIP1101-ITAD-->
+        <table>
+            <form method='post' action="greetings.html">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>  
+                <tbody>
+                    <tr>
+                        <td><label for="name"></label>Name:</td>
+                        <td><input type="text" name="name"  size="30" placeholder="Type your name here" maxlength="50" autofocus></td>
+                    </tr>
+                    <tr>
+                        <td> <label for="sex">Sex:</label></td>
+                        <td>
+                            <input type="radio"  id='male' name="gender" value="male" checked>Male <br> 
+                            <input type="radio"  id='female' name="gender" value="female" >Female <br> 
+                            <input type="radio"  id='other' name="gender" value="other" >Other <br> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="eye Color">Eye Color:</label></td>
+                        <td>
+                            <select name="eyeColor" id="eyeColor">
+                                <option value="black">Black</option>
+                                <option value="brown">Brown</option>
+                                <option value="green">Green</option>
+                                <option value="blue">Blue</option>
+                                
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for=" CheckAll">Check all that Applies:</label></td>
+                        <td>
+                            <input type="checkBox" id="feature1" name="feature1" value="6ft.">
+                            <label for="feature1">Over 6ft. Tall</label><br>
+                            
+                            <input type="checkBox" id="feature2" name="feature2" value="200lbs.">
+                            <label for="feature2">Over 200 pounds</label><br>
+
+                            <input type="checkBox" id="feature3" name="feature3" value="less than 200lbs.">
+                            <label for="feature3">Less than 200 pounds</label><br>
+                        </td>
+                    <tr>
+                        <td><label for="ability">Describe your athletic ability:</label></td>
+                        <td>
+                            <textarea rows="10" cols="30"></textarea>
+                        </td>
+                    </tr>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <th colspan="2"><input type="submit" id="btn1" value="Enter my Information"></th>
+                </tfoot>
+            </form>
+        </table>
+    </body>
+</html>
